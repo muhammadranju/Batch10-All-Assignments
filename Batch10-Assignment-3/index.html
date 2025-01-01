@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream House Landing Page - Tailwind CSS</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./styles/style.css" /> -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ABEF5F",
+              secondary: "#ABEF5F80",
+              darkColor_1: "#212121",
+              darkColor_2: "#494949",
+              darkColor_3: "#737373",
+              body: "#F4F4F4",
+              accent: "#ABEF5F33",
+              bodyDark: "#1C1C1C",
+              bgColor: "#F7F7F7",
+            },
+            fontFamily: { Manrope: "Manrope" },
+            backgroundImage: {
+              bgPaper: "url('./assets/bg.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Manrope">
+    <!-- header section start -->
+    <header class="bg-gradient-to-b from-bgColor">
+      <div class="w-11/12 mx-auto">
+        <!-- navbar section start -->
+        <nav class="navbar">
+          <div class="navbar-start">
+            <span
+              class="bg-primary py-[3px] px-[8px] text-darkColor_1 rounded-full"
+            >
+              <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i>
+            </span>
+
+            <a
+              class="btn text-4xl font-extrabold hover:bg-transparent border-0 shadow-none -ml-3 bg-transparent"
+              >Rinterio</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 text-darkColor_3 text-lg font-medium"
+            >
+              <li
+                class="hover:text-gray-800 text-darkColor_2 font-bold transition-colors duration-300 ease-in-out"
+              >
+                <a>Home</a>
+              </li>
+              <li
+                class="hover:text-gray-800 transition-colors duration-300 ease-in-out"
+              >
+                <a>Services</a>
+              </li>
+              <li
+                class="hover:text-gray-800 transition-colors duration-300 ease-in-out"
+              >
+                <a>Portfolio</a>
+              </li>
+              <li
+                class="hover:text-gray-800 transition-colors duration-300 ease-in-out"
+              >
+                <a>Blogs</a>
+              </li>
+              <li
+                class="hover:text-gray-800 transition-colors duration-300 ease-in-out"
+              >
+                <a>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-3">
+            <div class="space-x-2 hidden md:flex lg:flex">
+              <div
+                class="btn btn-ghost bg-white shadow-sm text-darkColor_3 rounded-full"
+              >
+                <i class="fa-solid fa-magnifying-glass text-lg"></i>
+              </div>
+
+              <div
+                class="btn btn-ghost bg-white shadow text-darkColor_3 rounded-full"
+              >
+                <i class="fa-solid fa-cart-shopping text-lg"></i>
+              </div>
+            </div>
+
+            <a
+              class="btn rounded-full px-6 bg-primary hover:bg-primary border-0 text-darkColor_1 font-extrabold text-xl md:flex lg:flex hidden"
+              >Book Consult
+
+              <span
+                class="bg-slate-900 py-[3px] px-[8px] text-white rounded-full"
+              >
+                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+              </span>
+            </a>
+
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden bg-white rounded-full shadow-sm"
+              >
+                <i class="fa-solid fa-bars text-xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 text-lg gap-3 font-medium"
+              >
+                <li
+                  class="hover:text-gray-800 transition-colors duration-300 ease-in-out"
+                >
+                  <a>Home</a>
+                </li>
+                <li
+                  class="hover:text-gray-800 transition-colors duration-300 ease-in-out"
+                >
+                  <a>Services</a>
+                </li>
+                <li
+                  class="hover:text-gray-800 transition-colors duration-300 ease-in-out"
+                >
+                  <a>Portfolio</a>
+                </li>
+                <li
+                  class="hover:text-gray-800 transition-colors duration-300 ease-in-out"
+                >
+                  <a>Blogs</a>
+                </li>
+                <li
+                  class="hover:text-gray-800 transition-colors duration-300 ease-in-out"
+                >
+                  <a>Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- navbar section end -->
+        <!-- banner section start -->
+        <div
+          class="flex flex-col justify-center items-center text-center space-y-8 lg:w-4/5 mx-auto"
+        >
+          <img src="./assets/banner.png" class="w-fit" alt="" />
+          <h1
+            class="lg:text-7xl text-4xl font-extrabold text-darkColor_1 lg:w-4/5"
+          >
+            Experience the Charm of Modern Barn House Design
+          </h1>
+          <p class="text-center lg:w-3/5 font-medium text-darkColor_2">
+            This barn-inspired architecture combines contemporary elegance with
+            the warmth of natural materials, offering a timeless yet
+            cutting-edge living experience.
+          </p>
+
+          <button
+            class="btn rounded-full px-6 bg-secondary hover:bg-secondary text-darkColor_1 font-extrabold text-xl lg:w-fit w-full border-[1px] hover:border-primary border-primary"
+          >
+            View Details
+
+            <span
+              class="bg-primary border py-[3px] px-[8px] text-darkColor_1 rounded-full"
+            >
+              <i class="fa-solid fa-arrow-right -rotate-45"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+      <!-- banner section end -->
+    </header>
+    <!-- header section end -->
+    <main>
+      <section class="bg-bgColor lg:mt-28 mt-10 lg:pb-28 md:pb-20 pb-14">
+        <!-- about section start -->
+        <div
+          class="w-11/12 mx-auto lg:pt-20 pt-10 flex flex-col lg:text-start text-center justify-center items-center gap-0 lg:flex-row lg:mr-10"
+        >
+          <div class="space-y-5 lg:w-1/2">
+            <img
+              src="./assets/Vector.png"
+              class="hidden lg:flex mb-5 -ml-16"
+              alt=""
+            />
+            <span class="bg-white rounded-full p-2 font-bold">
+              <i class="fa-solid fa-arrow-right"></i> About Us</span
+            >
+            <h1 class="lg:text-6xl text-4xl font-extrabold text-darkColor_1">
+              We design thoughtful, liveable spaces.
+            </h1>
+            <p class="text-darkColor_2 font-medium lg:w-3/5">
+              This barn-inspired architecture combines contemporary elegance
+              with the warmth of natural materials, offering a timeless yet
+              cutting-edge living experience.
+            </p>
+            <div class="md:flex lg:flex-col lg:space-y-5 space-y-4">
+              <!--  -->
+              <div class="flex bg-white p-5 rounded-xl text-start space-x-6">
+                <img
+                  src="./assets/commercial.png"
+                  class="lg:w-fit w-10 lg:h-auto h-10"
+                  alt=""
+                />
+                <div>
+                  <h3 class="font-extrabold text-xl">Mission Statement</h3>
+                  <p class="text-darkColor_2 font-medium lg:w-3/5">
+                    Clearly articulate your company's mission and values.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex bg-white p-5 rounded-xl text-start space-x-6">
+                <img
+                  src="./assets/residential.png"
+                  class="lg:w-fit w-10 lg:h-auto h-10"
+                  alt=""
+                />
+                <div>
+                  <h3 class="font-extrabold text-xl">Team Profiles</h3>
+                  <p class="text-darkColor_2 font-medium lg:w-3/5">
+                    Introduce your team members and their areas of expertise.
+                  </p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+          <div class="lg:mt-0 mt-5 lg:ml-32 md:ml-0">
+            <img src="./assets/Rectangle.png" class="w-full h-fit" alt="" />
+          </div>
+        </div>
+        <!-- about section end -->
+
+        <!-- service section start -->
+        <div
+          class="w-11/12 mx-auto rounded-3xl lg:py-8 bg-white grid grid-cols-1 lg:mt-28 m-10 md:grid-cols-2 lg:grid-cols-4"
+        >
+          <div class="p-5 text-center space-y-2">
+            <i class="fa-solid fa-comment-dots text-3xl text-darkColor_3"></i>
+            <h2 class="font-extrabold text-5xl text-darkColor_2">235+</h2>
+            <p class="font-medium text-darkColor_3">
+              Satisfied Clients Worldwide
+            </p>
+          </div>
+          <div class="p-5 text-center space-y-2">
+            <i class="fa-solid fa-calendar-days text-3xl text-darkColor_3"></i>
+            <h2 class="font-extrabold text-5xl text-darkColor_2">50+</h2>
+            <p class="font-medium text-darkColor_3">
+              Dedicated Teams of Experts
+            </p>
+          </div>
+          <div class="p-5 text-center space-y-2">
+            <i class="fa-solid fa-users-gear text-3xl text-darkColor_3"></i>
+            <h2 class="font-extrabold text-5xl text-darkColor_2">30k+</h2>
+            <p class="font-medium text-darkColor_3">
+              Homes Designed and Delivered
+            </p>
+          </div>
+          <div class="p-5 text-center space-y-2">
+            <i class="fa-solid fa-user-group text-3xl text-darkColor_3"></i>
+            <h2 class="font-extrabold text-5xl text-darkColor_2">307+</h2>
+            <p class="font-medium text-darkColor_3">
+              Skilled Architects and Designers
+            </p>
+          </div>
+        </div>
+        <!-- service section end -->
+
+        <!-- our works process start -->
+        <div class="w-11/12 mx-auto lg:mt-28 mt-10">
+          <div class="text-center space-y-5 flex flex-col items-center">
+            <span class="bg-white rounded-full p-2 font-bold">
+              <i class="fa-solid fa-arrow-right"></i> How we works</span
+            >
+            <h1 class="lg:text-6xl text-4xl font-extrabold text-darkColor_1">
+              Our Works Process
+            </h1>
+            <p class="text-darkColor_2 font-medium lg:w-1/2">
+              Our team works with you to bring your vision to life, combining
+              rustic charm with modern innovation. We design thoughtful,
+              liveable spaces.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-5 md:mt-8 lg:mt-8 mt-10"
+          >
+            <div class="card bg-[#E7C1D3]">
+              <div class="card-body">
+                <img src="./assets/concept.png" class="w-fit" alt="" />
+                <h2 class="card-title text-3xl font-extrabold">
+                  Conceptualization
+                </h2>
+                <p class="font-medium">
+                  We integrate timeless elements like wood, stone, and metal
+                  with cutting-edge design principles for a home that’s both
+                  beautiful and functional.
+                </p>
+              </div>
+            </div>
+            <div class="card bg-[#EFDA6E]">
+              <div class="card-body">
+                <img src="./assets/flow-chart.png" class="w-fit" alt="" />
+                <h2 class="card-title text-3xl font-extrabold">Design Phase</h2>
+                <p class="font-medium">
+                  We integrate timeless elements like wood, stone, and metal
+                  with cutting-edge design principles for a home that’s both
+                  beautiful and functional.
+                </p>
+              </div>
+            </div>
+            <div class="card bg-[#A4DAC3]">
+              <div class="card-body">
+                <img src="./assets/vision.png" class="w-fit" alt="" />
+                <h2 class="card-title text-3xl font-extrabold">Supervision</h2>
+                <p class="font-medium">
+                  We oversee every step of the construction process, ensuring
+                  your project stays on track and reflects the perfect blend of
+                  modern and rustic styles.
+                </p>
+              </div>
+            </div>
+            <div class="card bg-[#77AAEA]">
+              <div class="card-body">
+                <img src="./assets/budget-planning.png" class="w-fit" alt="" />
+                <h2 class="card-title text-3xl font-extrabold">
+                  Budget Planning
+                </h2>
+                <p class="font-medium">
+                  Our transparent budgeting process ensures you get the home of
+                  your dreams without any surprises, balancing
+                  cost-effectiveness with premium quality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- our works process start -->
+      </section>
+
+      <!-- our latest portfolio start -->
+      <section class="lg:bg-white bg-bgColor">
+        <div class="w-11/12 mx-auto lg:pt-28 lg:mb-24 pb-16 lg:pb-0">
+          <div class="text-center space-y-5 flex flex-col items-center">
+            <span class="bg-secondary rounded-full p-2 font-bold">
+              <i class="fa-solid fa-arrow-right"></i> Explore our Latest
+              works</span
+            >
+            <h1 class="lg:text-6xl text-4xl font-extrabold text-darkColor_1">
+              Our Latest Portfolio
+            </h1>
+            <p class="text-darkColor_2 font-medium lg:w-1/2">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+
+          <div
+            class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-4 mt-10"
+          >
+            <div
+              class="lg:col-span-8 bg-white flex flex-col md:flex-row lg:flex-row gap-x-6 border rounded-2xl p-5 lg:space-y-0 space-y-4"
+            >
+              <img src="./assets/img1.png" class="" alt="" />
+              <div class="space-y-7 flex flex-col justify-center">
+                <h3 class="font-extrabold text-2xl">Commercial Spaces</h3>
+                <p class="lg:w-4/5">
+                  From rustic-themed cafes to modern offices with a
+                  barn-inspired aesthetic, our commercial spaces make an
+                  unforgettable impression.
+                </p>
+                <div class="font-extrabold text-xl lg:w-fit w-full">
+                  View Details
+
+                  <span
+                    class="bg-primary border py-[3px] px-[8px] text-darkColor_1 rounded-full"
+                  >
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:col-span-4 flex bg-white justify-center items-center border rounded-2xl p-5"
+            >
+              <img src="./assets/img2.png" class="w-full" alt="" />
+            </div>
+            <div
+              class="bg-white lg:hidden flex justify-center items-center border rounded-2xl p-5 w-full"
+            >
+              <img src="./assets/img5.png" class="w-full" alt="" />
+            </div>
+
+            <div
+              class="lg:col-span-3 lg:flex hidden bg-white justify-center items-center border rounded-2xl p-5"
+            >
+              <img src="./assets/img3.png" class="w-full" alt="" />
+            </div>
+
+            <div
+              class="lg:col-span-6 bg-white flex flex-col md:flex-row lg:flex-row gap-x-6 border rounded-2xl p-5 lg:space-y-0 space-y-4"
+            >
+              <img src="./assets/img4.png" class="" alt="" />
+              <div class="space-y-7 flex flex-col justify-center">
+                <h3 class="font-extrabold text-2xl">Commercial Spaces</h3>
+                <p class="lg:w-4/5">
+                  From rustic-themed cafes to modern offices with a
+                  barn-inspired aesthetic, our commercial spaces make an
+                  unforgettable impression.
+                </p>
+                <div class="font-extrabold text-xl lg:w-fit w-full">
+                  View Details
+
+                  <span
+                    class="bg-primary border py-[3px] px-[8px] text-darkColor_1 rounded-full"
+                  >
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:col-span-3 flex bg-white lg:hidden justify-center items-center border rounded-2xl p-5"
+            >
+              <img src="./assets/img3.png" class="w-full" alt="" />
+            </div>
+            <div
+              class="lg:col-span-3 bg-white flex justify-center items-center border rounded-2xl p-5 w-full"
+            >
+              <img src="./assets/img5.png" class="w-full" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- our latest portfolio end -->
+
+      <!-- read our articles and news start -->
+      <section class="bg-bgColor lg:pb-28 pb-12">
+        <div class="w-11/12 mx-auto lg:pt-28 pb-10">
+          <div class="text-center space-y-5 sp flex flex-col items-center">
+            <span class="bg-secondary rounded-full p-2 font-bold">
+              <i class="fa-solid fa-arrow-right"></i> Rinterio News</span
+            >
+            <h1 class="lg:text-6xl text-4xl font-extrabold text-darkColor_1">
+              Read Our Articles and News
+            </h1>
+            <p class="text-darkColor_2 font-medium lg:w-1/2">
+              Encourage visitors to sign up for your newsletter to receive
+              updates.
+            </p>
+          </div>
+
+          <div class="flex lg:flex-row flex-col lg:space-x-5">
+            <div class="card bg-base-100 shadow-xl lg:mt-5 mt-10 pb-3">
+              <figure class="p-5">
+                <img
+                  class="rounded-xl w-full"
+                  src="./assets/article1.png"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="px-5 pb-3 space-y-4">
+                <div class="badge space-x-4 border-0 font-medium">
+                  <span>
+                    <i class="fa-solid fa-calendar-days mr-2"></i> May 9,
+                    2024</span
+                  >
+                  <span>
+                    <i class="fa-solid fa-circle-user mr-2"></i> By Admin</span
+                  >
+                </div>
+                <h2 class="card-title font-extrabold text-2xl">
+                  Homesteader Design
+                </h2>
+                <p>
+                  Whether you're a real estate agent, a property manager or a
+                  broker, Homesteader offers the most informational and
+                  immersive customer experience that increases commissions.
+                </p>
+
+                <div class="card-actions">
+                  <div class="font-extrabold text-xl lg:w-fit w-full">
+                    Read More
+
+                    <span
+                      class="bg-primary border py-[3px] px-[8px] text-darkColor_1 rounded-full"
+                    >
+                      <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl lg:mt-5 mt-10 pb-3">
+              <figure class="p-5">
+                <img
+                  class="rounded-xl w-full"
+                  src="./assets/article2.png"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="px-5 pb-3 space-y-4">
+                <div class="badge space-x-4 border-0 font-medium">
+                  <span>
+                    <i class="fa-solid fa-calendar-days mr-2"></i> June 23,
+                    2024</span
+                  >
+                  <span>
+                    <i class="fa-solid fa-circle-user mr-2"></i> By Admin</span
+                  >
+                </div>
+                <h2 class="card-title font-extrabold text-2xl">
+                  Office Design
+                </h2>
+                <p>
+                  Homesteader helps you better showcase your products by
+                  digitally presenting your items for sale in 3D or a virtual
+                  showroom. Reasonable cost, easy to use, you deserve it.
+                </p>
+                <div class="card-actions">
+                  <div class="font-extrabold text-xl lg:w-fit w-full">
+                    Read More
+
+                    <span
+                      class="bg-primary border py-[3px] px-[8px] text-darkColor_1 rounded-full"
+                    >
+                      <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl lg:mt-5 mt-10 pb-3">
+              <figure class="p-5">
+                <img
+                  class="rounded-xl w-full"
+                  src="./assets/article3.png"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="px-5 pb-3 space-y-4">
+                <div class="badge space-x-4 border-0 font-medium">
+                  <span>
+                    <i class="fa-solid fa-calendar-days mr-2"></i> July14,
+                    2024</span
+                  >
+                  <span>
+                    <i class="fa-solid fa-circle-user mr-2"></i> By Admin</span
+                  >
+                </div>
+                <h2 class="card-title font-extrabold text-2xl">
+                  Residential Design
+                </h2>
+                <p>
+                  Homesteader design tool empowers teaching and learning in
+                  architecture and interior design to cooperate efficiently, and
+                  turn design ideas into complete design projects.
+                </p>
+                <div class="card-actions">
+                  <div class="font-extrabold text-xl lg:w-fit w-full">
+                    Read More
+
+                    <span
+                      class="bg-primary border py-[3px] px-[8px] text-darkColor_1 rounded-full"
+                    >
+                      <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 lg shadow-xl lg:mt-5 mt-10 pb-3">
+              <figure class="p-5">
+                <img
+                  class="rounded-xl w-full"
+                  src="./assets/article4.png"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="px-5 pb-3 space-y-4">
+                <div class="badge space-x-4 border-0 font-medium">
+                  <span>
+                    <i class="fa-solid fa-calendar-days mr-2"></i> July14,
+                    2024</span
+                  >
+                  <span>
+                    <i class="fa-solid fa-circle-user mr-2"></i> By Admin</span
+                  >
+                </div>
+                <h2 class="card-title font-extrabold text-2xl">
+                  Design For Homeowners
+                </h2>
+                <p>
+                  With Homesteader, you can create detailed floor plans,
+                  experiment with different color schemes, and even see how
+                  natural light will impact your design choices.
+                </p>
+                <div class="card-actions">
+                  <div class="font-extrabold text-xl lg:w-fit w-full">
+                    Read More
+
+                    <span
+                      class="bg-primary border py-[3px] px-[8px] text-darkColor_1 rounded-full"
+                    >
+                      <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- read our articles and news end -->
+
+      <!-- challenge section start -->
+      <section class="lg:mt-28 mb-28">
+        <div
+          class="w-11/12 mx-auto gap-x-5 lg:pt-0 pt-10 flex flex-col lg:flex-row items-center"
+        >
+          <div class="flex-1">
+            <img src="./assets/2.jpg" class="rounded-xl" alt="" />
+          </div>
+
+          <div class="flex-1 space-y-5 lg:mt-0 mt-10">
+            <div class="space-y-5 lg:text-left text-center">
+              <span class="bg-secondary rounded-full p-2 font-bold">
+                <i class="fa-solid fa-clock mr-2"></i> Since 1986</span
+              >
+              <h1 class="lg:text-5xl text-4xl font-extrabold">
+                Creating the art of <br />
+                stylish living.
+              </h1>
+              <p class="font-medium opacity-80 text-lg lg:w-4/5">
+                Understanding your needs and conceptualizing a design that
+                reflects your vision. Our mission is to create environments that
+                inspire, combining cutting-edge architecture with practical
+                living solutions.
+              </p>
+            </div>
+
+            <div class="flex lg:flex-row items-center gap-x-5 lg:gap-x-20">
+              <div class="lg:mt-0 mt-5">
+                <div class="flex flex-col font-bold space-y-3">
+                  <span
+                    ><i class="fa-solid fa-circle-check lg:mr-2 mr:1"></i>
+                    Latest technologies</span
+                  >
+                  <span
+                    ><i class="fa-solid fa-circle-check lg:mr-2 mr:1"></i> 5
+                    Years Warranty</span
+                  >
+                  <span
+                    ><i class="fa-solid fa-circle-check lg:mr-2 mr:1"></i>
+                    High-Quality
+                  </span>
+                </div>
+                <div class="mt-7 space-y-5">
+                  <img src="./assets/sign.png" alt="" />
+
+                  <p class="bg-secondary rounded-full p-2 px-4 font-bold w-fit">
+                    @ Founder
+                  </p>
+                </div>
+              </div>
+              <div class="space-y-10 lg:mt-0 mt-5 text-center">
+                <div
+                  class="space-x-3 relative flex flex-col lg:flex-row items-center lg:justify-start justify-center"
+                >
+                  <div
+                    class="radial-progress relative z-20 text-[#E7C1D3]"
+                    style="--value: 96"
+                    role="progressbar"
+                  >
+                    96%
+                  </div>
+
+                  <span class="text-lg font-bold">Work Experiences</span>
+                </div>
+                <div class="space-x-3 flex flex-col lg:flex-row items-center">
+                  <div
+                    class="radial-progress text-[#EFDA6E]"
+                    style="--value: 85"
+                    role="progressbar"
+                  >
+                    85%
+                  </div>
+                  <span class="text-lg font-bold">High-Quality Designs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- challenge section end -->
+
+      <section class="bg-bgColor lg:pt-28 lg:pb-28 pt-10 pb-10">
+        <div class="w-11/12 mx-auto">
+          <div
+            class="flex justify-center text-center items-center flex-col space-y-8"
+          >
+            <span class="bg-secondary rounded-full p-2 font-bold">
+              <i class="fa-solid fa-arrow-right"></i> Apartment Sketch</span
+            >
+            <h1 class="lg:text-5xl text-3xl font-extrabold">Apartments Plan</h1>
+            <ul
+              class="flex flex-wrap text-xl lg:gap-y-0 gap-y-3 font-semibold items-center justify-center gap-x-10"
+            >
+              <li class="text-darkColor_1 underline font-extrabold">
+                The Studio
+              </li>
+              <li>Deluxe Portion</li>
+              <li>Penthouse</li>
+              <li>Top Garden</li>
+              <li>Double Height</li>
+            </ul>
+          </div>
+
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 mt-10 gap-x-20 gap-y-12 container mx-auto"
+          >
+            <div class="lg:p-16 p-10 bg-gray-200 rounded-2xl">
+              <h1
+                class="text-3xl lg:text-5xl font-bold text-heading-color mb-4 leading-1.3"
+              >
+                The Studio
+              </h1>
+              <p class="font-medium mb-10 leading-relaxed">
+                Whether you're a real estate agent, a property manager or a
+                broker, Honester offers the most informational and immersive
+                customer experience that increases commissions.
+              </p>
+
+              <ul class="flex flex-col lg:gap-y-8 gap-y-5 items-stretch">
+                <li class="text-sm md:text-base font-semibold relative z-0">
+                  <ul class="flex justify-between items-center">
+                    <li class="leading-1.8 pr-3 text-darkColor_1">
+                      Total Area ----------
+                    </li>
+
+                    <li>---------- 2800 Sq. Ft</li>
+                  </ul>
+                </li>
+
+                <li class="text-sm md:text-base font-semibold relative z-0">
+                  <ul class="flex justify-between items-center">
+                    <li class="leading-1.8 pr-3 text-darkColor_1">
+                      Bedroom ----------
+                    </li>
+
+                    <li>---------- 150 Sq. Ft</li>
+                  </ul>
+                </li>
+                <li class="text-sm md:text-base font-semibold relative z-0">
+                  <ul class="flex justify-between items-center">
+                    <li class="leading-1.8 pr-3 text-darkColor_1">
+                      Bathroom ----------
+                    </li>
+
+                    <li>---------- 45 Sq. Ft</li>
+                  </ul>
+                </li>
+                <li class="text-sm md:text-base font-semibold relative z-0">
+                  <ul class="flex justify-between items-center">
+                    <li class="leading-1.8 pr-3 text-darkColor_1">
+                      Balcony/Pets ----------
+                    </li>
+
+                    <li>---------- Allowed</li>
+                  </ul>
+                </li>
+                <li class="text-sm md:text-base font-semibold relative z-0">
+                  <ul class="flex justify-between items-center">
+                    <li class="leading-1.8 pr-3 text-darkColor_1">
+                      Lounge ----------
+                    </li>
+
+                    <li>---------- 650 Sq. Ft</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <img
+                src="./assets/10.png"
+                class="lg:w-[80%] md:w-full border-[2px] rounded-2xl p-5"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- discuss next project start -->
+      <section
+        class="bg-bgPaper mt-18 pb-10"
+        style="
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+        "
+      >
+        <div class="w-11/12 mx-auto">
+          <div
+            class="text-center space-y-5 flex flex-col items-center lg:pt-24 pt-12"
+          >
+            <span class="bg-secondary rounded-full p-2 font-bold">
+              <i class="fa-solid fa-arrow-right"></i> Let’s Connect</span
+            >
+            <h1 class="lg:text-6xl text-4xl font-extrabold text-darkColor_1">
+              Let’s Discuss Next Project
+            </h1>
+            <p class="text-darkColor_2 font-medium lg:w-1/2">
+              Address common questions about your services and process.
+            </p>
+          </div>
+
+          <div class="lg:w-[70%] mx-auto">
+            <div
+              class="flex flex-col lg:flex-row justify-center items-center lg:space-x-5 lg:mt-10 mt-3 space-y-3"
+            >
+              <input
+                type="text"
+                placeholder="First Name*"
+                class="input input-bordered w-full rounded-full lg:space-y-0"
+              />
+              <input
+                type="text"
+                placeholder="Last Name*"
+                class="input input-bordered w-full rounded-full"
+              />
+            </div>
+            <div
+              class="flex flex-col lg:flex-row justify-center items-center lg:space-x-5 lg:mt-5 mt-3 space-y-3"
+            >
+              <input
+                type="text"
+                placeholder="Phone Number*"
+                class="input input-bordered w-full rounded-full"
+              /><input
+                type="text"
+                placeholder="Email Address*"
+                class="input input-bordered w-full rounded-full"
+              />
+            </div>
+            <textarea
+              class="textarea textarea-bordered w-full rounded-3xl mt-5"
+              placeholder="Write your message here"
+              rows="8"
+            ></textarea>
+            <button
+              class="btn rounded-full px-6 bg-primary lg:mt-5 mt-3 border-0 hover:bg-primary text-darkColor_1 font-bold text-lg md:flex w-full"
+            >
+              Send Mail
+
+              <span class="bg-slate-900 px-[6px] text-white rounded-full">
+                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- discuss next project end -->
+    </main>
+    <footer class="bg-bodyDark">
+      <div class="w-11/12 mx-auto text-white pb-20">
+        <div
+          class="text-center lg:space-y-5 flex flex-col items-center lg:pt-24 pt-16"
+        >
+          <div class="flex justify-center items-center mb-5">
+            <span
+              class="bg-primary text-center py-[4px] px-[8px] text-darkColor_1 rounded-full"
+            >
+              <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i>
+            </span>
+
+            <div
+              class="btn text-4xl text-white font-extrabold hover:bg-transparent border-0 shadow-none -ml-3 spy bg-transparent"
+            >
+              <span>Rinterio</span>
+            </div>
+          </div>
+
+          <p class="text-darkColor_3 font-medium lg:w-1/2">
+            Copyright: © 2024 Rinterio. All rights reserved. | Privacy Policy |
+            Terms & Conditions
+          </p>
+        </div>
+        <div class="flex justify-center items-center lg:mt-10 mt-5">
+          <ul
+            class="flex md:flex-row lg:flex-row flex-col justify-center items-center font-medium lg:space-x-44 md:space-x-20 lg:space-y-0 md:space-y-0 space-y-8"
+          >
+            <li>Home</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li>Blogs</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="flex justify-center items-center lg:mt-10 mt-5">
+          <a
+            class="btn rounded-full border-0 px-6 bg-primary hover:bg-secondary text-darkColor_1 font-extrabold text-xl"
+            >Book Consult
+
+            <span
+              class="bg-slate-900 py-[3px] px-[8px] text-white rounded-full"
+            >
+              <i
+                class="fa-solid fa-arrow-right hover:bg-primary -rotate-45"
+              ></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
