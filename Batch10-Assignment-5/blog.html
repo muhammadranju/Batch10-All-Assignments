@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/coin.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryColor: "#B4F461",
+              primaryHoverColor: "#95c950",
+              colors: "#111111",
+              bgColor: "#F9F7F3",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen">
+    <header
+      class="pt-5 pb-8 bg-bgColor lg:px-0 px-3 sticky top-0 w-full backdrop-filter backdrop-blur-lg bg-opacity-50"
+    >
+      <div class="navbar container mx-auto">
+        <div class="navbar-start">
+          <a
+            href="./index.html"
+            class="btn bg-primaryColor px-7 hover:bg-primaryHoverColor text-colors text-xl"
+            >Home</a
+          >
+        </div>
+        <div
+          class="navbar-center space-x-4 lg:flex flex-row items-center justify-center"
+        >
+          <img src="./assets/logo.png" alt="logo" class="w-12 h-12" />
+          <h1 class="text-2xl font-bold hidden lg:flex">Donate Bangladesh</h1>
+        </div>
+        <div class="navbar-end space-x-2">
+          <img src="./assets/coin.png" alt="" />
+          <a class="text-xl font-semibold text-color opacity-75"
+            ><span>5500</span> BDT</a
+          >
+        </div>
+        <!-- Donation and History Section -->
+      </div>
+    </header>
+    <main class="container space-y-5 mx-auto mt-20 lg:px-0 px-3">
+      <h1 class="text-3xl font-bold">Important FAQ</h1>
+
+      <section class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The Document Object Model (DOM) is a programming interface for web
+              documents. It represents the structure of a web page as a
+              hierarchical tree of objects, where each element, attribute, and
+              piece of content is a node. Through the DOM, programming languages
+              like JavaScript can interact with and manipulate the content,
+              structure, and styles of a web page dynamically, enabling actions
+              such as updating text, modifying attributes, handling user events,
+              or changing the layout. The DOM provides a way for web pages to be
+              interactive and dynamic.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <ul>
+              <li>
+                1: By ID: Use a method that retrieves an element based on its
+                unique ID.
+              </li>
+              <li>
+                2: By Class: Use a method that selects all elements with a
+                specific class name.
+              </li>
+              <li>
+                3: By Tag Name: Use a method that selects all elements with a
+                specific tag name
+              </li>
+              <li>
+                4: By CSS Selectors: Use methods that allow selecting elements
+                using CSS selectors (e.g., class, id, attributes,
+                pseudo-classes).
+              </li>
+              <li>
+                5: By Name: For form elements, select based on their name
+                attribute.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <ul>
+              <li>
+                1: Efficiency: Reduces the need to attach multiple event
+                listeners to individual child elements, improving performance,
+                especially with dynamic or large lists of elements.
+              </li>
+              <li>
+                2: Dynamic Elements: Works well for elements added to the DOM
+                dynamically after the page has loaded, as the parent listener
+                can still handle events from newly created children.
+              </li>
+              <li>
+                3: Simpler Code: Centralizes event handling, reducing code
+                complexity by avoiding multiple event handlers.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <ul>
+              <li>
+                1: Get an attribute using a method that retrieves it by name.
+              </li>
+              <li>
+                2: Set an attribute by specifying the attribute name and value.
+              </li>
+              <li>
+                3: Remove an attribute using a method that takes the attribute
+                name as a parameter.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-20 pt-36 bg-bgColor sticky top-[100vh]"></footer>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+[
+  {
+    "playerId": 1,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789160/assignment/iotdvl1wtmhfuukaprho.jpg",
+    "role": "All-rounder",
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "Slow left-arm orthodox",
+    "biddingPrice": 1500000
+  },
+  {
+    "playerId": 2,
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789161/assignment/j2hpjzgjrr7oc1n3skbu.jpg",
+    "role": "Batsman",
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "N/A",
+    "biddingPrice": 900000
+  },
+  {
+    "playerId": 3,
+    "name": "Andre Russell",
+    "country": "Australia",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789159/assignment/s6ct5tg8fao3sxeajpfk.webp",
+    "role": "All-rounder",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm fast",
+    "biddingPrice": 1800000
+  },
+  {
+    "playerId": 4,
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789994/assignment/sqsmunaoww1q6cjpyzme.jpg",
+    "role": "Wicketkeeper-batsman",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "N/A",
+    "biddingPrice": 1000000
+  },
+  {
+    "playerId": 5,
+    "name": "Chris Gayle",
+    "country": "Australia",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789994/assignment/fyxmj1ah3dbago4c9qat.webp ",
+    "role": "Batsman",
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "Right-arm offbreak",
+    "biddingPrice": 1700000
+  },
+  {
+    "playerId": 6,
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789995/assignment/judgcf5hk3dmhsaxfw4p.jpg",
+    "role": "Bowler",
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "Left-arm fast-medium",
+    "biddingPrice": 1200000
+  },
+  {
+    "playerId": 7,
+    "name": "Imrul Kayes",
+    "country": "Bangladesh",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789994/assignment/vprwcvvrdjf3rjwjhxdp.jpg",
+    "role": "Batsman",
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "N/A",
+    "biddingPrice": 500000
+  },
+  {
+    "playerId": 8,
+    "name": "Dwayne Bravo",
+    "country": "Trinidad and Tobago",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789995/assignment/fxq3lq4ahbcmulsd6sxg.jpg",
+    "role": "All-rounder",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm medium-fast",
+    "biddingPrice": 1600000
+  },
+  {
+    "playerId": 9,
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789160/assignment/g83jb5syt7iom3pllmwc.jpg",
+    "role": "All-rounder",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm offbreak",
+    "biddingPrice": 950000
+  },
+  {
+    "playerId": 10,
+    "name": "Mujeeb Ur Rahman",
+    "country": "Afghanistan",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789160/assignment/w5zr8tvha9nj4wxupasw.jpg",
+    "role": "Bowler",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm offbreak",
+    "biddingPrice": 850000
+  },
+  {
+    "playerId": 11,
+    "name": "Taskin Ahmed",
+    "country": "Bangladesh",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789161/assignment/qpb0ptwzbycwthdbiohw.webp",
+    "role": "Bowler",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm fast",
+    "biddingPrice": 900000
+  },
+  {
+    "playerId": 12,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789159/assignment/vga4ckzzntdznq1y1dm5.webp",
+    "role": "Bowler",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "Right-arm leg break",
+    "biddingPrice": 2000000
+  },
+  {
+    "playerId": 13,
+    "name": "Soumya Sarkar",
+    "country": "Bangladesh",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789995/assignment/szcj9nwqzowxpxyqblim.jpg",
+    "role": "All-rounder",
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "Right-arm medium",
+    "biddingPrice": 750000
+  },
+  {
+    "playerId": 14,
+    "name": "Liton Das",
+    "country": "Bangladesh",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789159/assignment/gjyzp4g8lbzb7lzxvpfz.jpg",
+    "role": "Wicketkeeper-batsman",
+    "battingStyle": "Right-handed",
+    "bowlingStyle": "N/A",
+    "biddingPrice": 600000
+  },
+  {
+    "playerId": 15,
+    "name": "Sunil Narine",
+    "country": "Australia",
+    "image": "https://res.cloudinary.com/nodelove/image/upload/v1729789995/assignment/derzbk1wy0qj6m9mctiz.jpg",
+    "role": "Bowler",
+    "battingStyle": "Left-handed",
+    "bowlingStyle": "Right-arm offbreak",
+    "biddingPrice": 1400000
+  }
+]

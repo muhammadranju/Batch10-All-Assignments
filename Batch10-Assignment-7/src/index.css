@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+body {
+  font-family: "Sora", sans-serif;
+}
+
+.myHeader {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

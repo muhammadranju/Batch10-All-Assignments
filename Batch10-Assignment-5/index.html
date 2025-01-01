@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation - Page</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="shortcut icon" href="./assets/coin.png" type="image/x-icon" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryColor: "#B4F461",
+              primaryHoverColor: "#95c950",
+              colors: "#111111",
+              bgColor: "#F9F7F3",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen">
+    <header
+      class="lg:px-0 px-3 pb-8 sticky top-0 w-full backdrop-filter backdrop-blur-lg bg-opacity-50"
+    >
+      <nav class="bg-bgColor pt-5 pb-6">
+        <div class="navbar container mx-auto">
+          <div class="navbar-start">
+            <a
+              href="./blog.html"
+              class="btn bg-primaryColor px-7 hover:bg-primaryHoverColor text-colors text-xl"
+              >Blog</a
+            >
+          </div>
+          <div
+            class="navbar-center space-x-4 lg:flex flex-row items-center justify-center"
+          >
+            <img src="./assets/logo.png" alt="logo" class="w-12 h-12" />
+            <h1 class="text-2xl font-bold hidden lg:flex">Donate Bangladesh</h1>
+          </div>
+          <div class="navbar-end space-x-2">
+            <img src="./assets/coin.png" alt="" />
+            <a class="text-xl font-semibold text-color opacity-75"
+              ><span id="balance">9500</span> BDT</a
+            >
+          </div>
+          <!-- Donation and History Section -->
+        </div>
+      </nav>
+      <div class="flex flex-row justify-center space-x-4 items-center mt-16">
+        <button
+          class="btn bg-primaryColor px-6 hover:bg-primaryHoverColor text-colors text-xl"
+          id="donationButton"
+        >
+          Donation
+        </button>
+        <button
+          class="btn btn-outline px-6 text-colors text-xl"
+          id="historyButton"
+        >
+          History
+        </button>
+      </div>
+    </header>
+
+    <main class="container mx-auto mt-20 lg:px-0 px-3">
+      <!-- Donation Section -->
+      <section id="cardContainer">
+        <!-- All Cards Section-->
+        <!-- card 1 -->
+        <div class="mt-8 border rounded-xl lg:p-10 p-5">
+          <div class="flex lg:flex-row flex-col md:gap-10 justify-between">
+            <figure class="">
+              <img src="./assets/noakhali.png" class="lg:w-[650px]" />
+            </figure>
+            <div class="lg:w-[750px] space-y-4">
+              <button class="btn text-gray-500 lg:mt-0 mt-4">
+                <img src="./assets/coin.png" class="lg:w-7" alt="" />
+                <span id="displayDonateAmount1">0</span> BDT
+              </button>
+
+              <h2 class="card-title font-bold" id="donateTitle1">
+                Flood at Noakhali, Bangladesh
+              </h2>
+              <p class="text-lg font-light">
+                The recent floods in Noakhali, Bangladesh have devastated
+                countless lives and livelihoods. Homes have been destroyed,
+                crops have been submerged, and infrastructure has been damaged.
+                The situation is dire, and the affected communities urgently
+                need our support. By donating to flood relief efforts, you can
+                make a tangible difference in the lives of those who have been
+                impacted by this natural disaster. Your contribution will help
+                provide essential supplies such as food, water, shelter, and
+                medical care to those in need. It will also support rebuilding
+                efforts and contribute to the long-term recovery of the affected
+                region. Additionally, your donation can help prevent.
+              </p>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full"
+                id="inputAmount1"
+              />
+              <div class="card-actions">
+                <button
+                  class="btn bg-primaryColor text-xl hover:bg-primaryHoverColor w-full"
+                  id="donateBtn1"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="mt-8 border rounded-xl lg:p-10 p-6">
+          <div class="flex lg:flex-row flex-col md:gap-10 justify-between">
+            <figure class="">
+              <img src="./assets/feni.png" class="lg:w-[650px]" />
+            </figure>
+            <div class="lg:w-[750px] space-y-4">
+              <button class="btn text-gray-500 lg:mt-0 mt-4">
+                <img src="./assets/coin.png" class="lg:w-7" alt="" />
+                <span id="displayDonateAmount2">0</span> BDT
+              </button>
+
+              <h2 class="card-title font-bold" id="donateTitle2">
+                Flood Relief in Feni,Bangladesh
+              </h2>
+              <p class="text-lg font-light">
+                The recent floods in Feni, Bangladesh have devastated countless
+                lives and livelihoods. Homes have been destroyed, crops have
+                been submerged, and infrastructure has been damaged. The
+                situation is dire, and the affected communities urgently need
+                our support. By donating to flood relief efforts, you can make a
+                tangible difference in the lives of those who have been impacted
+                by this natural disaster. Your contribution will help provide
+                essential supplies such as food, water, shelter, and medical
+                care to those in need. It will also support rebuilding efforts
+                and contribute to the long-term recovery of the affected region.
+                Every donation, no matter the size, can help alleviate suffering
+                and bring hope to a community in crisis. Let us come together to
+                show solidarity with the people of Feni and help them rebuild
+                their lives. Your contribution will help provide essential
+                supplies such as food.
+              </p>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full"
+                id="inputAmount2"
+              />
+              <div class="card-actions">
+                <button
+                  class="btn bg-primaryColor text-xl hover:bg-primaryHoverColor w-full"
+                  id="donateBtn2"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="mt-8 border rounded-xl lg:p-10 p-6">
+          <div class="flex lg:flex-row flex-col md:gap-10 justify-between">
+            <figure class="">
+              <img src="./assets/quota-protest.png" class="lg:w-[650px]" />
+            </figure>
+            <div class="lg:w-[750px] space-y-4">
+              <button class="btn text-gray-500 lg:mt-0 mt-4">
+                <img src="./assets/coin.png" class="lg:w-7" alt="" />
+                <span id="displayDonateAmount3">0</span> BDT
+              </button>
+
+              <h2 class="card-title font-bold" id="donateTitle3">
+                Aid for Injured in the Quota Movement
+              </h2>
+              <p class="text-lg font-light">
+                The recent Quota Movement, a nationwide protest in Bangladesh
+                demanding a fair quota system for government jobs, has been
+                marked by both peaceful demonstrations and violent clashes. Many
+                individuals, including students, activists, and ordinary
+                citizens, have sustained injuries during these protests. The
+                injuries range from minor bruises to severe wounds, and some
+                individuals have even lost their lives. Providing aid to the
+                injured is a crucial step in supporting the victims of the Quota
+                Movement and ensuring their well-being. Medical assistance,
+                including treatment for injuries, medication, and rehabilitation
+                services, is essential for the recovery of those affected.
+                Additionally, financial assistance can help alleviate the
+                economic burden faced by injured individuals and their families.
+                By providing aid, we can demonstrate solidarity with the victims
+                of the movement and contribute to their physical and emotional
+                healing. Furthermore, supporting the injured can help to raise
+                awareness.
+              </p>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full"
+                id="inputAmount3"
+              />
+              <div class="card-actions">
+                <button
+                  class="btn bg-primaryColor text-xl hover:bg-primaryHoverColor w-full"
+                  id="donateBtn3"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="mt-8 border rounded-xl lg:p-10 p-6">
+          <div class="flex lg:flex-row flex-col md:gap-10 justify-between">
+            <figure class="">
+              <img src="./assets/gaza.webp" class="lg:w-[650px] rounded-2xl" />
+            </figure>
+            <div class="lg:w-[750px] space-y-4">
+              <button class="btn text-gray-500 lg:mt-0 mt-4">
+                <img src="./assets/coin.png" class="lg:w-7" alt="" />
+                <span id="displayDonateAmount4">0</span> BDT
+              </button>
+
+              <h2 class="card-title font-bold" id="donateTitle4">
+                Children in Gaza need life-saving support
+              </h2>
+              <p class="text-lg font-light">
+                The conflict in the Gaza Strip is taking a catastrophic toll on
+                children. More than 14,000 children have reportedly been killed,
+                according to the latest estimate by the Palestinian Ministry of
+                Health; thousands more have been injured. There are no safe
+                spaces. All of Gaza’s children have been exposed to the
+                traumatic experiences of war, the consequences of which will
+                last a lifetime. Around 1.9 million people – about 9 in 10 of
+                Gaza’s population – are estimated to have been internally
+                displaced. Half of them children. They do not have enough access
+                to water, food, fuel and medicine.
+              </p>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full"
+                id="inputAmount4"
+              />
+              <div class="card-actions">
+                <button
+                  class="btn bg-primaryColor text-xl hover:bg-primaryHoverColor w-full"
+                  id="donateBtn4"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="mt-8 border rounded-xl lg:p-10 p-6">
+          <div class="flex lg:flex-row flex-col md:gap-10 justify-between">
+            <figure class="">
+              <img
+                src="./assets/learning.webp"
+                class="lg:w-[650px] rounded-2xl"
+              />
+            </figure>
+            <div class="lg:w-[750px] space-y-4">
+              <button class="btn text-gray-500 lg:mt-0 mt-4">
+                <img src="./assets/coin.png" class="lg:w-7" alt="" />
+                <span id="displayDonateAmount5">0</span> BDT
+              </button>
+
+              <h2 class="card-title font-bold" id="donateTitle5">
+                CARE works to increase access to quality education for
+                marginalized children
+              </h2>
+              <p class="text-lg font-light">
+                Our programs provide tailored solutions to students facing
+                multiple barriers to education to acquire relevant skills,
+                creating opportunities for positive transitions to secondary
+                school and dignified livelihoods. Our integrated approach is
+                based on extensive research on what works to increase
+                marginalized girls’ learning outcomes, retention, and wellbeing.
+                We put girls at the center of our programs and build a
+                supportive environment for them in the community and at school.
+                At the individual level,
+              </p>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full"
+                id="inputAmount5"
+              />
+              <div class="card-actions">
+                <button
+                  class="btn bg-primaryColor text-xl hover:bg-primaryHoverColor w-full"
+                  id="donateBtn5"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Donate History section -->
+      <section id="donateHistory" class="space-y-4 hidden"></section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="mt-20 pt-36 bg-bgColor sticky top-[100vh]"></footer>
+    <!-- Success Modal -->
+    <dialog
+      id="successModal"
+      class="modal modal-middle sm:modal-middle flex justify-center items-center text-center lg:px-0 px-3"
+    >
+      <div class="modal-box">
+        <h3 class="text-3xl font-bold">Congratulations!</h3>
+        <div class="flex justify-center items-center mt-4 mb-4">
+          <img src="./assets/coin.png" class="w-9" alt="" />
+        </div>
+        <p class="py-4 font-semibold">You Have Donated for Humankind</p>
+        <h4 class="font-bold text-2xl text-green-600">Successfully</h4>
+        <form method="dialog" class="mt-5">
+          <button class="btn font-bold btn-outline btn-success">
+            Close Confirmation
+          </button>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- Error Modal-->
+    <dialog
+      id="errorModal"
+      class="modal modal-middle sm:modal-middle flex justify-center items-center text-center lg:px-0 px-3"
+    >
+      <div class="modal-box">
+        <h3 class="text-4xl font-bold text-red-500">Error Alert!</h3>
+        <div class="flex justify-center items-center mt-4 mb-4">
+          <img src="./assets/remove.png" class="w-12" alt="" />
+        </div>
+        <p class="py-4 font-semibold text-xl" id="errorId"></p>
+        <h4 class="font-bold text-2xl text-red-400">Failed</h4>
+        <form method="dialog" class="mt-5">
+          <button class="btn btn-outline btn-error font-bold">
+            Close Warning
+          </button>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="./js/utility.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

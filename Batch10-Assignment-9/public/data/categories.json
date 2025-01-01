@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Lesson 1",
+    "description": "Lesson 1 description"
+  },
+  { "id": 2, "name": "Lesson 2", "description": "Lesson 2 description" },
+  {
+    "id": 3,
+    "name": "Lesson 3",
+    "description": "Lesson 3 description"
+  },
+  {
+    "id": 4,
+    "name": "Lesson 4",
+    "description": "Lesson 4 description"
+  },
+  {
+    "id": 5,
+    "name": "Lesson 5",
+    "description": "Lesson 5 description"
+  },
+  {
+    "id": 6,
+    "name": "Lesson 6",
+    "description": "Lesson 6 description"
+  },
+  {
+    "id": 7,
+    "name": "Lesson 7",
+    "description": "Lesson 7 description"
+  },
+  {
+    "id": 8,
+    "name": "Lesson 8",
+    "description": "Lesson 8 description"
+  },
+  {
+    "id": 9,
+    "name": "Lesson 9",
+    "description": "Lesson 9 description"
+  },
+  {
+    "id": 10,
+    "name": "Lesson 10",
+    "description": "Lesson 10 description"
+  },
+  {
+    "id": 11,
+    "name": "Lesson 11",
+    "description": "Lesson 11 description"
+  },
+  {
+    "id": 12,
+    "name": "Lesson 12",
+    "description": "Lesson 12 description"
+  }
+]

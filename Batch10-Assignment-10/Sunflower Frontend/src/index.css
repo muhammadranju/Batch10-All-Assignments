@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  @apply transition-colors duration-200;
+}
+
+body {
+  font-family: "Inter", serif;
+}
+
+a.active {
+  color: #4f46e5;
+  font-weight: bold;
+  text-decoration: underline;
+}

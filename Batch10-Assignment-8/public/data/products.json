@@ -1,0 +1,545 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Wireless Bluetooth Headphones",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643528/assignment/B8/zu8ccrqw23rqjsklfdmx.jpg",
+    "category": "Electronics",
+    "price": 149,
+    "description": "High-quality wireless Bluetooth headphones with noise cancellation.",
+    "Specification": [
+      "Bluetooth 5.0",
+      "Noise-cancelling",
+      "20 hours battery life",
+      "Over-ear design"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "slug": "wireless-bluetooth-headphones"
+  },
+  {
+    "product_id": 2,
+    "product_title": "Smart LED TV 55\"",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643530/assignment/B8/jmvveku6y1wwq0wxud6u.jpg",
+    "category": "Electronics",
+    "price": 399,
+    "description": "55-inch smart LED TV with 4K Ultra HD resolution and streaming capabilities.",
+    "Specification": ["55-inch display", "4K UHD", "HDR10", "Built-in WiFi"],
+    "availability": true,
+    "rating": 4.7,
+    "slug": "smart-led-tv-55-inch"
+  },
+  {
+    "product_id": 3,
+    "product_title": "Gaming Laptop",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643527/assignment/B8/xcuuffglbamrgkdib7uq.webp",
+    "category": "Computers",
+    "price": 1099,
+    "description": "High-performance gaming laptop with powerful GPU and SSD storage.",
+    "Specification": [
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "NVIDIA GTX 1660"
+    ],
+    "availability": false,
+    "rating": 4.3,
+    "slug": "gaming-laptop"
+  },
+  {
+    "product_id": 4,
+    "product_title": "Smartphone with Triple Camera",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643527/assignment/B8/uamqs1mpohvuoonnzitx.jpg",
+    "category": "Mobiles",
+    "price": 699,
+    "description": "Sleek smartphone with triple camera system and fast-charging support.",
+    "Specification": [
+      "6.4-inch display",
+      "128GB storage",
+      "Triple camera setup",
+      "Fast charging"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "slug": "smartphone-with-triple-camera"
+  },
+  {
+    "product_id": 5,
+    "product_title": "Smart Watch",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/kgpywnwgh56nwat40xpg.jpg",
+    "category": "Wearables",
+    "price": 399,
+    "description": "Water-resistant smartwatch with heart-rate monitoring and GPS.",
+    "Specification": [
+      "Heart rate monitoring",
+      "GPS",
+      "Water-resistant",
+      "5-day battery life"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "slug": "smart-watch"
+  },
+  {
+    "product_id": 6,
+    "product_title": "Portable Charger 10000mAh",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643528/assignment/B8/mppuf6mj0pcsaixmxrfm.jpg",
+    "category": "Accessories",
+    "price": 809,
+    "description": "Compact 10000mAh portable charger for fast, on-the-go charging.",
+    "Specification": [
+      "10000mAh capacity",
+      "Dual USB output",
+      "Fast charging",
+      "Compact design"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "slug": "portable-charger-10000mah"
+  },
+  {
+    "product_id": 7,
+    "product_title": "Wireless Keyboard and Mouse",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/d7fzz3xy0bdveq84pr2h.jpg",
+    "category": "Computers",
+    "price": 159,
+    "description": "Wireless keyboard and mouse combo with long battery life.",
+    "Specification": [
+      "Wireless 2.4 GHz",
+      "Silent keys",
+      "Optical mouse",
+      "Long battery life"
+    ],
+    "availability": true,
+    "rating": 4.1,
+    "slug": "wireless-keyboard-mouse"
+  },
+  {
+    "product_id": 8,
+    "product_title": "Air Purifier",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643527/assignment/B8/yi6fcgjny4uxbv1euwpa.jpg",
+    "category": "Home Appliances",
+    "price": 129,
+    "description": "HEPA filter air purifier for cleaner, fresher indoor air.",
+    "Specification": [
+      "HEPA filter",
+      "Quiet operation",
+      "Covers up to 300 sq ft",
+      "Energy efficient"
+    ],
+    "availability": false,
+    "rating": 4.4,
+    "slug": "air-purifier"
+  },
+  {
+    "product_id": 9,
+    "product_title": "Instant Pot Multi-Cooker",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/rcr0h7nuatalq51nk7w0.webp",
+    "category": "Kitchen Appliances",
+    "price": 800,
+    "description": "7-in-1 multi-cooker with various cooking functions.",
+    "Specification": [
+      "7 cooking functions",
+      "Stainless steel",
+      "6-quart capacity",
+      "Easy to clean"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "slug": "instant-pot-multi-cooker"
+  },
+  {
+    "product_id": 10,
+    "product_title": "Yoga Mat",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/y8eyvbuc8tdzf1sgzyfx.jpg",
+    "category": "Accessories",
+    "price": 663,
+    "description": "Durable and non-slip yoga mat for all levels of practice.",
+    "Specification": [
+      "Non-slip",
+      "6mm thick",
+      "Eco-friendly",
+      "72-inch length"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "slug": "yoga-mat"
+  },
+  {
+    "product_id": 11,
+    "product_title": "Electric Kettle",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643524/assignment/B8/u1qcktpv9pldcrk8xwdm.jpg",
+    "category": "Kitchen Appliances",
+    "price": 752,
+    "description": "1.7L electric kettle with rapid-boil technology.",
+    "Specification": [
+      "1.7-liter capacity",
+      "Stainless steel",
+      "Auto shut-off",
+      "Rapid boil"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "slug": "electric-kettle"
+  },
+  {
+    "product_id": 12,
+    "product_title": "Digital Camera",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/rpjhfhejpobdesofvntj.webp",
+    "category": "Photography",
+    "price": 299,
+    "description": "Compact digital camera with 20MP sensor and 4x optical zoom.",
+    "Specification": [
+      "20MP sensor",
+      "4x optical zoom",
+      "1080p video",
+      "3-inch LCD"
+    ],
+    "availability": false,
+    "rating": 4.2,
+    "slug": "digital-camera"
+  },
+  {
+    "product_id": 13,
+    "product_title": "Electric Toothbrush",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/iq99rqfboornzbp5ydrw.jpg",
+    "category": "Wearables",
+    "price": 230,
+    "description": "Rechargeable electric toothbrush with multiple brushing modes.",
+    "Specification": [
+      "Rechargeable",
+      "Multiple brushing modes",
+      "2-minute timer",
+      "Waterproof"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "slug": "electric-toothbrush"
+  },
+  {
+    "product_id": 14,
+    "product_title": "Laptop Backpack",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/zxh21xrmlfflt5sfm799.jpg",
+    "category": "Accessories",
+    "price": 152,
+    "description": "Water-resistant laptop backpack with multiple compartments.",
+    "Specification": [
+      "Fits up to 15-inch laptops",
+      "Water-resistant",
+      "Padded shoulder straps",
+      "Multiple compartments"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "slug": "laptop-backpack"
+  },
+  {
+    "product_id": 15,
+    "product_title": "Cordless Vacuum Cleaner",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/hczjvzkcozq2ggkojkgw.jpg",
+    "category": "Home Appliances",
+    "price": 360,
+    "description": "Lightweight cordless vacuum cleaner for easy cleaning.",
+    "Specification": [
+      "Cordless",
+      "Lightweight",
+      "HEPA filter",
+      "Rechargeable battery"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "slug": "cordless-vacuum-cleaner"
+  },
+  {
+    "product_id": 16,
+    "product_title": "Smart Thermostat",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643525/assignment/B8/ea3ysjegop4mouimnbw0.png",
+    "category": "Electronics",
+    "price": 149,
+    "description": "WiFi-enabled smart thermostat for energy-efficient home heating and cooling.",
+    "Specification": [
+      "WiFi-enabled",
+      "Energy-saving",
+      "App control",
+      "Voice assistant compatible"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "slug": "smart-thermostat"
+  },
+  {
+    "product_id": 17,
+    "product_title": "Bluetooth Speaker",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643522/assignment/B8/f9geehmziei1iljcrodb.avif",
+    "category": "Audio",
+    "price": 172,
+    "description": "Portable Bluetooth speaker with powerful bass and 10-hour battery life.",
+    "Specification": [
+      "Bluetooth 5.0",
+      "10-hour battery life",
+      "Water-resistant",
+      "Built-in microphone"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "slug": "bluetooth-speaker"
+  },
+  {
+    "product_id": 18,
+    "product_title": "Espresso Machine",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643524/assignment/B8/eysnube1xxlcjtiukuga.jpg",
+    "category": "Kitchen Appliances",
+    "price": 159,
+    "description": "Automatic espresso machine for café-quality coffee at home.",
+    "Specification": [
+      "15-bar pump",
+      "Milk frother",
+      "Removable water tank",
+      "Compact design"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "slug": "espresso-machine"
+  },
+  {
+    "product_id": 19,
+    "product_title": "Fitness Tracker",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643524/assignment/B8/vk7alkmg3maunchgfg3m.png",
+    "category": "Wearables",
+    "price": 136,
+    "description": "Activity tracker with heart rate monitoring and step counter.",
+    "Specification": [
+      "Heart rate monitor",
+      "Step counter",
+      "Sleep tracking",
+      "Water-resistant"
+    ],
+    "availability": false,
+    "rating": 4.1,
+    "slug": "fitness-tracker"
+  },
+  {
+    "product_id": 20,
+    "product_title": "Robot Vacuum Cleaner",
+    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643522/assignment/B8/l8f4fanlgo7uv1mzisqp.jpg",
+    "category": "Home Appliances",
+    "price": 229,
+    "description": "Robot vacuum cleaner with intelligent navigation and app control.",
+    "Specification": [
+      "App control",
+      "Self-charging",
+      "Anti-fall sensors",
+      "Works on various surfaces"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "slug": "robot-vacuum-cleaner"
+  },
+  {
+    "product_id": 21,
+    "product_title": "Noise-Cancelling Earbuds",
+    "product_image": "https://img.drz.lazcdn.com/g/kf/S8cc6c95749194087b4c10958a695027e0.jpg_720x720q80.jpg_.webp",
+    "category": "Electronics",
+    "price": 261,
+    "description": "Compact noise-cancelling earbuds with high-fidelity sound and long battery life.",
+    "Specification": [
+      "Bluetooth 5.1",
+      "Active noise-cancellation",
+      "12 hours battery life",
+      "Water-resistant"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "slug": "noise-cancelling-earbuds"
+  },
+
+  {
+    "product_id": 23,
+    "product_title": "Wireless Gaming Mouse",
+    "product_image": "https://img.drz.lazcdn.com/static/bd/p/6ab04ddc347e770098c9ec0a081d244e.jpg_720x720q80.jpg_.webp",
+    "category": "Computers",
+    "price": 752,
+    "description": "Ergonomic wireless gaming mouse with customizable DPI settings.",
+    "Specification": [
+      "Wireless 2.4 GHz",
+      "Adjustable DPI",
+      "RGB lighting",
+      "Ergonomic design"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "slug": "wireless-gaming-mouse"
+  },
+  {
+    "product_id": 24,
+    "product_title": "Mechanical Keyboard",
+    "product_image": "https://img.drz.lazcdn.com/static/bd/p/d2af0f25f903c3901b9f3f25cc92c0fa.jpg_720x720q80.jpg",
+    "category": "Computers",
+    "price": 390,
+    "description": "RGB backlit mechanical keyboard designed for gaming and typing.",
+    "Specification": [
+      "Mechanical keys",
+      "RGB backlight",
+      "Anti-ghosting",
+      "Durable build"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "slug": "mechanical-keyboard"
+  },
+  {
+    "product_id": 25,
+    "product_title": "Tablet with Stylus",
+    "product_image": "https://img.drz.lazcdn.com/g/kf/S1b0138b7e6a143c0bea59ed71c18401f3.png_720x720q80.png",
+    "category": "Electronics",
+    "price": 299,
+    "description": "10-inch tablet with stylus support, ideal for sketching and note-taking.",
+    "Specification": [
+      "10-inch display",
+      "64GB storage",
+      "Stylus included",
+      "10-hour battery life"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "slug": "tablet-with-stylus"
+  },
+  {
+    "product_id": 26,
+    "product_title": "Gaming Headset",
+    "product_image": "https://img.drz.lazcdn.com/static/bd/p/35277bf8d3eb108b063228660438c178.png_720x720q80.png",
+    "category": "Computers",
+    "price": 280,
+    "description": "Over-ear gaming headset with immersive sound and noise-cancelling mic.",
+    "Specification": [
+      "50mm drivers",
+      "Noise-cancelling microphone",
+      "LED lighting",
+      "Comfortable padding"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "slug": "gaming-headset"
+  },
+  {
+    "product_id": 27,
+    "product_title": "USB-C Hub",
+    "product_image": "https://img.drz.lazcdn.com/g/kf/S36a707d245fc4b45a28e1b5a300d7c399.jpg_720x720q80.jpg",
+    "category": "Computers",
+    "price": 156,
+    "description": "Compact USB-C hub with multiple ports for versatile connectivity.",
+    "Specification": [
+      "HDMI output",
+      "3 USB ports",
+      "SD card reader",
+      "Compact design"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "slug": "usb-c-hub"
+  },
+  {
+    "product_id": 28,
+    "product_title": "5G Smartphone",
+    "product_image": "https://img.drz.lazcdn.com/static/bd/p/55902caffd4c915dc7814a1687ce88b3.jpg720x720q80.jpg",
+    "category": "Mobiles",
+    "price": 499,
+    "description": "High-performance smartphone with 5G connectivity and advanced camera.",
+    "Specification": [
+      "6.5-inch display",
+      "128GB storage",
+      "Triple camera",
+      "5G support"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "slug": "5g-smartphone"
+  },
+
+  {
+    "product_id": 30,
+    "product_title": "Wireless Charger",
+    "product_image": "https://img.drz.lazcdn.com/static/bd/p/f517f5c7a1aa5017402c29d2ebe0fde5.jpg_720x720q80.jpg",
+    "category": "Electronics",
+    "price": 171,
+    "description": "Fast wireless charger compatible with most smartphones.",
+    "Specification": [
+      "Qi-compatible",
+      "Fast charging",
+      "LED indicator",
+      "Compact design"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "slug": "wireless-charger"
+  },
+
+  {
+    "product_id": 34,
+    "product_title": "Smartphone Car Mount",
+    "product_image": "https://img.drz.lazcdn.com/g/kf/S5206c856d1184ba1bc800218211ae7fau.png_720x720q80.png",
+    "category": "Mobiles",
+    "price": 113,
+    "description": "Secure car mount for smartphones, compatible with most models.",
+    "Specification": [
+      "360-degree rotation",
+      "Easy one-touch mounting",
+      "Fits most smartphones",
+      "Compact design"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "slug": "smartphone-car-mount"
+  },
+
+  {
+    "product_id": 49,
+    "product_title": "Foldable Smartphone",
+    "product_image": "https://img.drz.lazcdn.com/g/kf/S40e45e41530b448fbc4eea1c32633398C.jpg_720x720q80.jpg",
+    "category": "Mobiles",
+    "price": 1399,
+    "description": "Innovative foldable smartphone with dual displays for multitasking and immersive viewing.",
+    "Specification": [
+      "8-inch foldable display",
+      "256GB storage",
+      "Quad camera system",
+      "5G connectivity"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "slug": "foldable-smartphone"
+  },
+  {
+    "product_id": 50,
+    "product_title": "Rugged Smartphone",
+    "product_image": "https://img.drz.lazcdn.com/static/bd/p/aab6954f46774403e83697a6a50a538d.jpg_720x720q80.jpg",
+    "category": "Mobiles",
+    "price": 399,
+    "description": "Durable smartphone designed for outdoor use, featuring waterproof and shockproof capabilities.",
+    "Specification": [
+      "5.5-inch display",
+      "64GB storage",
+      "Waterproof and dustproof",
+      "Long battery life"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "slug": "rugged-smartphone"
+  },
+  {
+    "product_id": 51,
+    "product_title": "Budget Smartphone",
+    "product_image": "https://img.drz.lazcdn.com/g/kf/Sf1a73601520942d6a92dfb7db1fe28e8l.jpg_720x720q80.jpg",
+    "category": "Mobiles",
+    "price": 140,
+    "description": "Affordable smartphone with essential features for everyday use.",
+    "Specification": [
+      "6.1-inch display",
+      "32GB storage",
+      "Dual camera",
+      "Long-lasting battery"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "slug": "budget-smartphone"
+  }
+]

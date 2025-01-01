@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy - Pet Adoption Platform</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./images/logo.webp" type="image/x-icon" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              colorPrimary: "#0E7A81",
+              colorPrimaryHover: "#0c6369",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <header class="w-11/12 mx-auto xl:container">
+      <nav class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base font-semibold"
+            >
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-3xl text-black hover:bg-transparent"
+            ><img src="./images/logo.webp" alt="" /> Peddy</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-base font-semibold">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <span
+            class="btn rounded-full border-[2px] bg-transparent hover:bg-transparent text-xl"
+          >
+            <i class="fa-regular fa-user"></i>
+          </span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="xl:container w-11/12 mx-auto relative">
+      <!-- hero section start -->
+      <section class="mt-10">
+        <div class="hero">
+          <div class="hero-content text-center flex flex-col">
+            <div class="lg:max-w-3xl space-y-10">
+              <span class="font-bold lg:text-2xl text-xl text-gray-500"
+                >Bringing Families Together ❤️‍🔥</span
+              >
+              <h1 class="lg:text-6xl text-4xl font-black">
+                Your Path to Adoption Starts Here
+              </h1>
+              <p class="font-medium">
+                Your path to adoption begins here, with compassionate guidance
+                and expert support. Whether you're growing your family or
+                offering a child a loving home, we're here to walk you through
+                every step of the adoption process, making your journey as
+                smooth and fulfilling as possible.
+              </p>
+
+              <a
+                href="#best-friend-section"
+                class="btn bg-colorPrimary text-white px-7 rounded-xl hover:bg-colorPrimaryHover"
+              >
+                View More
+              </a>
+            </div>
+            <img src="./images/pet.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- hero section end -->
+
+      <!-- Adopt  Your  Best Friend Start -->
+      <section class="flex flex-col mt-10" id="best-friend-section">
+        <!-- heading section -->
+        <div class="hero">
+          <div
+            class="hero-content flex flex-col justify-center items-center lg:max-w-3xl"
+          >
+            <h1 class="font-black lg:text-4xl text-3xl text-center">
+              Adopt Your Best Friend
+            </h1>
+            <p class="text-center font-medium">
+              Adopt your best friend today and welcome a loyal companion into
+              your life. By adopting, you're giving a loving animal a forever
+              home while gaining a friend who will bring endless joy and love.
+              Start your journey toward finding a pet that’s ready to become
+              part of your family.
+            </p>
+          </div>
+        </div>
+        <!-- heading section -->
+
+        <!-- category section -->
+        <div
+          class="grid lg:grid-cols-4 grid-cols-2 justify-between lg:gap-x-44 gap-x-5 lg:gap-y-10 gap-y-4 mt-8 lg:max-w-full mx-auto hidden"
+          id="categoryButtons"
+        ></div>
+
+        <div class="flex justify-center items-center my-20" id="sinnerOne">
+          <span class="loading loading-bars loading-lg"></span>
+          <span class="loading loading-bars loading-lg"></span>
+        </div>
+        <!-- category section -->
+      </section>
+      <!-- Adopt  Your  Best Friend End-->
+
+      <!-- Best Deal For you -->
+      <section class="mt-10">
+        <!-- Best Deal For you section -->
+        <div class="flex justify-between items-center lg:max-w-full mx-auto">
+          <h4 class="text-2xl font-bold">Best Deal For you</h4>
+          <button
+            class="btn bg-colorPrimary text-white px-7 rounded-xl hover:bg-colorPrimaryHover"
+            id="sortByPiceButton"
+          >
+            Sort by Price
+          </button>
+        </div>
+        <!-- Best Deal For you section -->
+
+        <!-- card container section -->
+        <div
+          class="flex lg:flex-row flex-col lg:items-start lg:gap-x-5 mt-8"
+          id="cardContainerSection"
+        >
+          <!-- grid card section  -->
+          <div
+            class="grid lg:grid-cols-3 grid-cols-1 lg:w-4/5 border p-4 rounded-xl gap-5"
+            id="productCards"
+          ></div>
+          <!-- grid card section  -->
+
+          <!-- error message -->
+          <div
+            class="lg:w-4/5 bg-slate-200 rounded-xl p-5 lg:h-96 hidden"
+            id="errorSection"
+          >
+            <div
+              class="flex justify-center items-center flex-col lg:max-w-3xl mx-auto text-center space-y-5 lg:mt-10"
+            >
+              <img src="./images/error.webp" alt="" />
+              <h1 class="font-bold lg:text-4xl text-2xl">
+                No Information Available
+              </h1>
+              <p>
+                No information is available at this time, but please check back
+                later for updates. We are working to provide accurate details
+                and will share them as soon as they become available.
+              </p>
+            </div>
+          </div>
+          <!-- error message -->
+
+          <!-- card image section -->
+          <div
+            class="lg:w-1/5 border p-4 lg:mt-0 mt-5 rounded-xl grid grid-cols-2 gap-5 relative"
+            id="productCardImages"
+          >
+            <div
+              class="flex justify-center items-center absolute top-0 left-0 right-5"
+              id="noImageSection"
+            >
+              <h3 class="font-bold">There are no available images</h3>
+            </div>
+          </div>
+          <!-- card image section -->
+        </div>
+        <!-- card container section -->
+      </section>
+
+      <div class="flex justify-center items-center my-20" id="sinnerTwo">
+        <span class="loading loading-bars loading-lg"></span>
+        <span class="loading loading-bars loading-lg"></span>
+      </div>
+      <!-- Best Deal For you -->
+
+      <div
+        role="alert"
+        id="alertSuccessMessage"
+        class="alert lg:w-1/5 bottom-5 top-2 left-20 float-right sticky hidden"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="stroke-info h-6 w-6 shrink-0 lg:flex hidden"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+        <span class="text-lg font-black">Like Successfully!❤️❤️❤️ </span>
+      </div>
+    </main>
+
+    <!-- Pets Details Modal -->
+    <dialog id="petsDetails" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box lg:w-11/12 lg:max-w-3xl">
+        <div id="petModalData"></div>
+
+        <div class="modal-action w-full">
+          <!-- <div method="dialog"></div> -->
+          <form method="dialog" class="w-full">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+              class="btn w-full text-colorPrimary border-[#0E7A811A] bg-[#0E7A811A] hover:bg-[#0E7A811A] hover:border-[#0E7A811A]"
+            >
+              Cancel
+            </button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Adopt Challenge Modal -->
+    <dialog id="adoptChallengeModal" class="modal modal-bottom sm:modal-middle">
+      <div
+        class="modal-box flex flex-col text-center justify-center items-center space-y-5"
+      >
+        <img src="./images/handshake.gif" class="w-24 h-24" alt="" />
+        <h1 class="font-black text-6xl">Congrats</h1>
+        <p class="font-semibold text-xl">
+          Adoption Process is Start For you Pet
+        </p>
+        <span class="font-black text-7xl">
+          <span id="countNumber">3</span>
+        </span>
+      </div>
+    </dialog>
+
+    <dialog id="subscribeMessage" class="modal modal-bottom sm:modal-middle">
+      <div
+        class="modal-box flex flex-col text-center justify-center items-center space-y-5"
+      >
+        <img src="./images/handshake.gif" class="w-24 h-24" alt="" />
+        <h1 class="font-black text-3xl">Thank you for subscribing!</h1>
+        <p class="font-semibold text-base">
+          This is the first time you subscribed to our newsletter. We'll keep
+          you updated with the latest news and promotions.
+        </p>
+      </div>
+    </dialog>
+    <footer class="bg-[#131313] mt-20 py-10">
+      <div
+        class="lg:container w-11/12 mx-auto flex lg:flex-row flex-col justify-between lg:items-start items-center text-center lg:text-start lg:space-y-0 space-y-6 text-white lg:px-10"
+      >
+        <ul class="space-y-2">
+          <li>
+            <a class="btn btn-ghost text-3xl hover:bg-transparent">
+              <img src="./images/logo.webp" alt="" />
+              <span class="">Peddy</span>
+            </a>
+          </li>
+          <li>Location: Rajpara, Rajshahi, Bangladesh</li>
+          <li>Phone: +880 17-123-4567</li>
+          <li>Email: info@peddy.com</li>
+          <li>Openings hours: 9.00 AM - 5.00 PM</li>
+          <li>
+            <div
+              class="flex space-x-5 lg:justify-start lg:items-start items-center justify-center"
+            >
+              <img src="./images/icon/fb.png" alt="" />
+              <img src="./images/icon/x.png" alt="" />
+              <img src="./images/icon/yt.png" alt="" />
+              <img src="./images/icon/insta.png" alt="" />
+            </div>
+          </li>
+        </ul>
+
+        <ul class="text-gray-400 space-y-2">
+          <li class="text-2xl text-white font-bold">Useful Links</li>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Animals</li>
+          <li>Foundation</li>
+          <li>Contact</li>
+        </ul>
+
+        <ul class="space-y-2">
+          <li class="text-2xl text-white font-bold">Drop a Message</li>
+
+          <li>
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="input input-bordered w-full bg-gray-800"
+              id="email"
+            />
+          </li>
+          <li>
+            <button
+              class="btn bg-colorPrimary text-white px-7 border-0 rounded-xl hover:bg-colorPrimaryHover w-full text-xl font-bold"
+              id="subscribeButton"
+            >
+              Subscribe
+            </button>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./js/utilities.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
